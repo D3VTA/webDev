@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Page description" />
+        <title>Todo App</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Todo App</h1>
+            <div>
+                <input type="text" placeholder="Enter Todo item" />
+                <button class="btn btn--primary" onclick="addTodo()">
+                    Add Todo
+                </button>
+            </div>
+            <div id="todo-0" style="display: flex">
+                <h4>-> Take class</h4>
+                <button class="btn btn--edit" onclick="editTodo(0)">
+                    Edit
+                </button>
+                <button class="btn btn--delete" onclick="deleteTodo(0)">
+                    Delete
+                </button>
+            </div>
+            <div id="todo-1" style="display: flex">
+                <h4>-> go gym</h4>
+                <button class="btn btn--edit" onclick="editTodo(1)">
+                    Edit
+                </button>
+                <button class="btn btn--delete" onclick="deleteTodo(1)">
+                    Delete
+                </button>
+            </div>
+            <div id="todo-2" style="display: flex">
+                <h4>-> eat lunch</h4>
+                <button class="btn btn--edit" onclick="editTodo(2)">
+                    Edit
+                </button>
+                <button class="btn btn--delete" onclick="deleteTodo(2)">
+                    Delete
+                </button>
+            </div>
+            <div id="todo-3" style="display: flex">
+                <h4>-> do homework</h4>
+                <button class="btn btn--edit" onclick="editTodo(3)">
+                    Edit
+                </button>
+                <button class="btn btn--delete" onclick="deleteTodo(3)">
+                    Delete
+                </button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
